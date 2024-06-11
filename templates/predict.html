@@ -1,0 +1,30 @@
+<!-- predict.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ginjal Prediction Result</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Ginjal Prediction Result</h1>
+        <div class="card mt-3">
+            <div class="card-body">
+                <img src="{{ url_for('static', filename='uploads/' + image_path) }}" alt="Uploaded Image" class="img-fluid mb-3">
+                <p class="card-text">Predicted Label: <strong>{{ predicted_label }}</strong></p>
+                <p class="card-text"><strong>Confidence:</strong> {{ confidence }}</p>
+                <a href="/" class="btn btn-primary">Upload Another Image</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

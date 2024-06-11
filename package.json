@@ -1,0 +1,23 @@
+{
+  "name": "image-prediction-app",
+  "version": "1.0.0",
+  "description": "Image Prediction App using Node.js and TensorFlow.js",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "@tensorflow/tfjs": "^4.20.0",
+    "@tensorflow/tfjs-converter": "^4.20.0",
+    "@tensorflow/tfjs-node": "^4.20.0",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "express-fileupload": "^1.5.0",
+    "jimp": "^0.22.12",
+    "multer": "^1.4.5-lts.1",
+    "path": "^0.12.7"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
